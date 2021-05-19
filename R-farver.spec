@@ -4,7 +4,7 @@
 #
 Name     : R-farver
 Version  : 2.0.3
-Release  : 11
+Release  : 12
 URL      : https://cran.r-project.org/src/contrib/farver_2.0.3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/farver_2.0.3.tar.gz
 Summary  : High Performance Colour Space Manipulation
