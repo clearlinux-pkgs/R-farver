@@ -4,7 +4,7 @@
 #
 Name     : R-farver
 Version  : 2.1.0
-Release  : 18
+Release  : 19
 URL      : https://cran.r-project.org/src/contrib/farver_2.1.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/farver_2.1.0.tar.gz
 Summary  : High Performance Colour Space Manipulation
@@ -38,10 +38,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1634597294
+export SOURCE_DATE_EPOCH=1641011235
 
 %install
-export SOURCE_DATE_EPOCH=1634597294
+export SOURCE_DATE_EPOCH=1641011235
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -123,3 +123,5 @@ R CMD check --no-manual --no-examples --no-codoc farver || :
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/R/library/farver/libs/farver.so
+/usr/lib64/R/library/farver/libs/farver.so.avx2
+/usr/lib64/R/library/farver/libs/farver.so.avx512
